@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [com.crm.SeleniumFramework by packages]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="practice(failed)">
+    <classes>
+      <class name="practice.AllAtOnceVTiger">
+        <methods>
+          <include name="AS"/>
+          <include name="BT"/>
+          <include name="AC"/>
+          <include name="AT"/>
+          <include name="BS"/>
+          <include name="BC"/>
+          <include name="AM"/>
+          <include name="allAutomationVTiger"/>
+          <include name="BM"/>
+        </methods>
+      </class> <!-- practice.AllAtOnceVTiger -->
+      <class name="practice.ParameterTestTest">
+        <methods>
+          <include name="pMethodTest"/>
+        </methods>
+      </class> <!-- practice.ParameterTestTest -->
+      <class name="practice.CreateContectWithOrganisation">
+        <methods>
+          <include name="createContectWithOrganisationTest"/>
+          <include name="AS"/>
+          <include name="BT"/>
+          <include name="AC"/>
+          <include name="AT"/>
+          <include name="BS"/>
+          <include name="BC"/>
+          <include name="AM"/>
+          <include name="BM"/>
+        </methods>
+      </class> <!-- practice.CreateContectWithOrganisation -->
+    </classes>
+  </test> <!-- practice(failed) -->
+</suite> <!-- Failed suite [com.crm.SeleniumFramework by packages] -->
