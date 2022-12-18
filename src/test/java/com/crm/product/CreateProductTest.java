@@ -31,7 +31,7 @@ import com.crm.Object_Repository.ProductListPage;
 
 @Listeners(com.crm.Generic_utilities.ListenerImplementationClass.class)
 public class CreateProductTest extends BaseClass {
-	@Test(groups = {"smokeTest"})
+	@Test(groups = {"smokeTest","regressionTest"})
 public void createProductTest() throws IOException
 {
 	File_Utility flib=new File_Utility();

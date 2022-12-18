@@ -31,7 +31,7 @@ import com.crm.Object_Repository.ProductListPage;
 
 @Listeners(com.crm.Generic_utilities.ListenerImplementationClass.class)
 public class CreateAndDeleteProductTest extends BaseClass {
-	@Test(groups = {"regressionTest"})
+	@Test(groups = "smokeTest")
 public void createAndDeleteProductTest() throws EncryptedDocumentException, IOException
 {
 	File_Utility flib=new File_Utility();
