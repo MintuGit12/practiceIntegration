@@ -35,6 +35,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 @Listeners(com.crm.Generic_utilities.ListenerImplementationClass.class)
 public class CreateOrganizationTest extends BaseClass
 {
+//Integration of the maven git project
 	//,retryAnalyzer = com.crm.Generic_utilities.RetryAnalyser.class //in group
 	@Test(groups = "regressionTest")
 public void createOrganizationTest() throws IOException, InterruptedException
