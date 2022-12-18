@@ -32,7 +32,7 @@ public WebElement getDeleteButton() {
 public void validationOfPage(String value)
 {
 	if(productInformationHeader.getText().contains(value))
-		System.out.println("Product test passed");
+		System.out.println("Product test passed okk");
 	else 
 		System.out.println("Product test failed");
 }
