@@ -3,7 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name=""/>
+      <class name="com.crm.product.CreateAndDeleteProductTest"/>
+      <class name="com.crm.campaign.CreateCampaignWithProductTest"/>
+      <class name="com.crm.product.CreateProductTest"/>
+      <class name="com.crm.organization.CreateOrganizationTest"/>
+      <class name="com.crm.campaign.CreateCampaignTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
