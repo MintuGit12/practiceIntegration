@@ -37,6 +37,7 @@ public class WebDriver_Utility {
 public void waitForPageToLoad(WebDriver driver)
 {
 	driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+	
 }
 /**
  * to handle explicit condition

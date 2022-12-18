@@ -36,7 +36,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class CreateOrganizationTest extends BaseClass
 {
 	//,retryAnalyzer = com.crm.Generic_utilities.RetryAnalyser.class //in group
-	@Test(groups = {"regressionTest"})
+	@Test(groups = "regressionTest")
 public void createOrganizationTest() throws IOException, InterruptedException
 {
 

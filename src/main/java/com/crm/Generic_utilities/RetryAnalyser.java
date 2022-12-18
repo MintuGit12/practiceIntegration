@@ -12,7 +12,7 @@ public class RetryAnalyser implements IRetryAnalyzer {
 		if(count<retryAnalyzer)
 		{
 			count++;
-			return true;
+		return true;
 		}
 		return false;
 	}
