@@ -47,8 +47,8 @@ public void BT()
 public void BC() throws IOException
 { 
 		 File_Utility flib=new File_Utility();
-		//String browser = System.getProperty("browser");
-			String browser=flib.getPropertyKeyValue("browser");
+		String browser = System.getProperty("browser");
+			//String browser=flib.getPropertyKeyValue("browser");
 if(browser.equalsIgnoreCase("chrome"))
 {
 	WebDriverManager.chromedriver().setup();
