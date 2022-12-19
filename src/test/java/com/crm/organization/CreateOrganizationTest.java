@@ -49,7 +49,6 @@ System.out.println("lets see the integration");
 
 	wlib.toMaximizeBrowser(driver);
 	wlib.waitForPageToLoad(driver);
-
 	OrganizationListPage org=new OrganizationListPage(driver);
 	HomePage home=new HomePage(driver);
 	home.clickToOrganization();
