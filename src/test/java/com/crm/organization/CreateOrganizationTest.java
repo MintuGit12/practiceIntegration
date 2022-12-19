@@ -55,7 +55,7 @@ System.out.println("lets see the integration");
 	home.clickToOrganization();
 	org.clickCreateOrganisation();
 	//Assert.fail();
-System.out.println("finally updated and done now trying for the jenkins");
+System.out.println("finally updated and done now trying for the jenkins task");
 	int ranNum = jlib.getRanDomNum();
 
 	String val = elib.getExcelData("organisation", 1, 0);

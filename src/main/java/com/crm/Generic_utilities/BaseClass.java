@@ -45,8 +45,9 @@ public void BT()
 	@BeforeClass(groups = {"smokeTest","regressionTest"})
 	//public void BC(String browser) throws IOException//for cross browser tessting
 public void BC() throws IOException
-{
+{ 
 		 File_Utility flib=new File_Utility();
+		//String browser = System.getProperty("browser");
 			String browser=flib.getPropertyKeyValue("browser");
 if(browser.equalsIgnoreCase("chrome"))
 {

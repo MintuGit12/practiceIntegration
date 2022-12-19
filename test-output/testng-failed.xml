@@ -1,13 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite thread-count="1" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="Testrunner1(failed)">
     <classes>
-      <class name="practice.DataProviderTYTest">
+      <class name="com.crm.campaign.CreateCampaignWithProductTest">
         <methods>
-          <include name="data_provider"/>
+          <include name="AS"/>
+          <include name="BT"/>
+          <include name="AC"/>
+          <include name="AT"/>
+          <include name="BS"/>
+          <include name="BC"/>
+          <include name="AM"/>
+          <include name="createCampaignWithProductTest"/>
+          <include name="BM"/>
         </methods>
-      </class> <!-- practice.DataProviderTYTest -->
+      </class> <!-- com.crm.campaign.CreateCampaignWithProductTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Testrunner1(failed) -->
+  <test thread-count="1" parallel="tests" name="Testrunner2(failed)">
+    <classes>
+      <class name="com.crm.product.CreateAndDeleteProductTest">
+        <methods>
+          <include name="AS"/>
+          <include name="BT"/>
+          <include name="AC"/>
+          <include name="AT"/>
+          <include name="BS"/>
+          <include name="BC"/>
+          <include name="AM"/>
+          <include name="BM"/>
+          <include name="createAndDeleteProductTest"/>
+        </methods>
+      </class> <!-- com.crm.product.CreateAndDeleteProductTest -->
+    </classes>
+  </test> <!-- Testrunner2(failed) -->
+  <test thread-count="1" parallel="tests" name="Testrunner3(failed)">
+    <classes>
+      <class name="com.crm.organization.CreateOrganizationTest">
+        <methods>
+          <include name="AS"/>
+          <include name="BT"/>
+          <include name="AC"/>
+          <include name="AT"/>
+          <include name="BS"/>
+          <include name="BC"/>
+          <include name="AM"/>
+          <include name="BM"/>
+          <include name="createOrganizationTest"/>
+        </methods>
+      </class> <!-- com.crm.organization.CreateOrganizationTest -->
+    </classes>
+  </test> <!-- Testrunner3(failed) -->
+</suite> <!-- Failed suite [Suite] -->
