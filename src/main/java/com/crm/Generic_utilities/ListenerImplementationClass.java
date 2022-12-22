@@ -36,17 +36,19 @@ public ExtentTest test;
 	
 		test.log(LogStatus.FAIL, result.getMethod().getMethodName()+" execution got failed");
 		
-			test.log(LogStatus.FAIL,result.getThrowable());
-		
 		String res = result.getMethod().getMethodName();
 		EventFiringWebDriver eDriver=new EventFiringWebDriver(BaseClass.sDriver);
 		File src=eDriver.getScreenshotAs(OutputType.FILE);
 		try
 		{
 			File dest=new File("./screenshot/"+res+".png");
-			FileUtils.copyFile(src, dest);
+			String path = dest.getAbsolutePath();
 			Thread.sleep(3000);
-			test.addScreenCapture("./screenshot/"+res+".png"+" capturing is done...................");
+			FileUtils.copyFile(src, dest);
+			
+			Thread.sleep(3000);
+			test.log(LogStatus.FAIL,test.addScreenCapture(path+" test is getting failed"));
+			
 	}
 		catch(Exception e)
 		{

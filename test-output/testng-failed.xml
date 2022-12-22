@@ -3,11 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.product.GridProgram">
+      <class name="com.crm.organization.CreateOrganizationTest">
         <methods>
-          <include name="gridTest"/>
+          <include name="AS"/>
+          <include name="BT"/>
+          <include name="AC"/>
+          <include name="AT"/>
+          <include name="BS"/>
+          <include name="BC"/>
+          <include name="AM"/>
+          <include name="BM"/>
+          <include name="createOrganizationTest"/>
         </methods>
-      </class> <!-- com.crm.product.GridProgram -->
+      </class> <!-- com.crm.organization.CreateOrganizationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

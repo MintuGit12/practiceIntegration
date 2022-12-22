@@ -41,9 +41,7 @@ public void BS()
 }
 	@BeforeTest
 public void BT()
-{
-
-	
+{	
 		//System.out.println("run in parellel mode");
 }
 	@Parameters("browser")

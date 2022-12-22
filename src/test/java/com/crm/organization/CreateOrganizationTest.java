@@ -50,11 +50,13 @@ System.out.println("lets see the integration");
 	wlib.toMaximizeBrowser(driver);
 	wlib.waitForPageToLoad(driver);
 	OrganizationListPage org=new OrganizationListPage(driver);
-	Assert.fail();
+
 	HomePage home=new HomePage(driver);
 	home.clickToOrganization();
 	org.clickCreateOrganisation();
+	
 	Assert.fail();
+	
 System.out.println("finally updated and done now trying for the jenkins task");
 System.out.println("lets see smoke test pull");
 	int ranNum = jlib.getRanDomNum();
