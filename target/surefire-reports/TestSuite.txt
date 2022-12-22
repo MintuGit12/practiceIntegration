@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 159.343 sec
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 114.352 sec <<< FAILURE!
+createCampaignTest(com.crm.campaign.CreateCampaignTest)  Time elapsed: 3.34 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.fail(Assert.java:103)
+	at com.crm.campaign.CreateCampaignTest.createCampaignTest(CreateCampaignTest.java:48)
+
+createOrganizationTest(com.crm.organization.CreateOrganizationTest)  Time elapsed: 3.401 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.fail(Assert.java:103)
+	at com.crm.organization.CreateOrganizationTest.createOrganizationTest(CreateOrganizationTest.java:53)
+
