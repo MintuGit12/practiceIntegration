@@ -34,7 +34,7 @@ import com.crm.Object_Repository.LoginPage;
 //java.util.Iterator;
 @Listeners(com.crm.Generic_utilities.ListenerImplementationClass.class)
 public class CreateCampaignWithProductTest extends BaseClass {
-	@Test(groups = {"smokeTest","regressionTest"})
+	@Test(groups = {"regressionTest"})
 public void createCampaignWithProductTest() throws IOException, InterruptedException
 {
 		File_Utility flib=new File_Utility();

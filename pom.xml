@@ -22,6 +22,13 @@
     <version>4.1.2</version>
 </dependency>
 <dependency>
+	<groupId>com.relevantcodes</groupId>
+	<artifactId>extentreports</artifactId>
+	<version>2.41.2</version>
+</dependency>
+<!-- Thanks for using https://jar-download.com -->
+
+<dependency>
     <groupId>mysql</groupId>
     <artifactId>mysql-connector-java</artifactId>
     <version>5.1.38</version>
@@ -53,7 +60,7 @@
         <version>3.0.0-M7</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
+            <suiteXmlFile>smokeTest1.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
