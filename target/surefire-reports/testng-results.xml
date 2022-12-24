@@ -1,126 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="82038" started-at="2022-12-23T05:31:13Z" finished-at="2022-12-23T05:32:35Z">
+  <suite name="Suite" duration-ms="12703" started-at="2022-12-24T15:24:55Z" finished-at="2022-12-24T15:25:08Z">
     <groups>
-      <group name="regressionTest">
-        <method signature="CreateOrganizationTest.createOrganizationTest()[pri:0, instance:com.crm.organization.CreateOrganizationTest@161479c6]" name="createOrganizationTest" class="com.crm.organization.CreateOrganizationTest"/>
-        <method signature="CreateProductTest.createProductTest()[pri:0, instance:com.crm.product.CreateProductTest@75329a49]" name="createProductTest" class="com.crm.product.CreateProductTest"/>
-      </group> <!-- regressionTest -->
-      <group name="smokeTest">
-        <method signature="CreateAndDeleteProductTest.createAndDeleteProductTest()[pri:0, instance:com.crm.product.CreateAndDeleteProductTest@6d2a209c]" name="createAndDeleteProductTest" class="com.crm.product.CreateAndDeleteProductTest"/>
-        <method signature="CreateProductTest.createProductTest()[pri:0, instance:com.crm.product.CreateProductTest@75329a49]" name="createProductTest" class="com.crm.product.CreateProductTest"/>
-      </group> <!-- smokeTest -->
     </groups>
-    <test name="Test" duration-ms="82038" started-at="2022-12-23T05:31:13Z" finished-at="2022-12-23T05:32:35Z">
-      <class name="com.crm.organization.CreateOrganizationTest">
-        <test-method status="PASS" signature="BC()[pri:0, instance:com.crm.organization.CreateOrganizationTest@161479c6]" name="BC" is-config="true" duration-ms="1226" started-at="2022-12-23T05:32:02Z" finished-at="2022-12-23T05:32:03Z">
+    <test name="Test" duration-ms="12703" started-at="2022-12-24T15:24:55Z" finished-at="2022-12-24T15:25:08Z">
+      <class name="com.crm.product.GridProgram">
+        <test-method status="PASS" signature="gridTest2()[pri:0, instance:com.crm.product.GridProgram@45b9a632]" name="gridTest2" duration-ms="12685" started-at="2022-12-24T15:24:55Z" finished-at="2022-12-24T15:25:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BC -->
-        <test-method status="PASS" signature="BM()[pri:0, instance:com.crm.organization.CreateOrganizationTest@161479c6]" name="BM" is-config="true" duration-ms="3316" started-at="2022-12-23T05:32:03Z" finished-at="2022-12-23T05:32:06Z">
+        </test-method> <!-- gridTest2 -->
+        <test-method status="PASS" signature="gridTest1()[pri:0, instance:com.crm.product.GridProgram@45b9a632]" name="gridTest1" duration-ms="4411" started-at="2022-12-24T15:24:55Z" finished-at="2022-12-24T15:25:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BM -->
-        <test-method status="FAIL" signature="createOrganizationTest()[pri:0, instance:com.crm.organization.CreateOrganizationTest@161479c6]" name="createOrganizationTest" duration-ms="5266" started-at="2022-12-23T05:32:06Z" finished-at="2022-12-23T05:32:11Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.fail(Assert.java:103)
-at com.crm.organization.CreateOrganizationTest.createOrganizationTest(CreateOrganizationTest.java:58)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:324)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:74)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:123)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrganizationTest -->
-        <test-method status="PASS" signature="AM()[pri:0, instance:com.crm.organization.CreateOrganizationTest@161479c6]" name="AM" is-config="true" duration-ms="1479" started-at="2022-12-23T05:32:18Z" finished-at="2022-12-23T05:32:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AM -->
-        <test-method status="PASS" signature="AC()[pri:0, instance:com.crm.organization.CreateOrganizationTest@161479c6]" name="AC" is-config="true" duration-ms="16251" started-at="2022-12-23T05:32:19Z" finished-at="2022-12-23T05:32:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AC -->
-      </class> <!-- com.crm.organization.CreateOrganizationTest -->
-      <class name="com.crm.product.CreateAndDeleteProductTest">
-        <test-method status="PASS" signature="BC()[pri:0, instance:com.crm.product.CreateAndDeleteProductTest@6d2a209c]" name="BC" is-config="true" duration-ms="2719" started-at="2022-12-23T05:31:13Z" finished-at="2022-12-23T05:31:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BC -->
-        <test-method status="PASS" signature="BM()[pri:0, instance:com.crm.product.CreateAndDeleteProductTest@6d2a209c]" name="BM" is-config="true" duration-ms="4206" started-at="2022-12-23T05:31:16Z" finished-at="2022-12-23T05:31:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BM -->
-        <test-method status="PASS" signature="createAndDeleteProductTest()[pri:0, instance:com.crm.product.CreateAndDeleteProductTest@6d2a209c]" name="createAndDeleteProductTest" duration-ms="7862" started-at="2022-12-23T05:31:20Z" finished-at="2022-12-23T05:31:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAndDeleteProductTest -->
-        <test-method status="PASS" signature="AM()[pri:0, instance:com.crm.product.CreateAndDeleteProductTest@6d2a209c]" name="AM" is-config="true" duration-ms="3637" started-at="2022-12-23T05:31:28Z" finished-at="2022-12-23T05:31:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AM -->
-        <test-method status="PASS" signature="AC()[pri:0, instance:com.crm.product.CreateAndDeleteProductTest@6d2a209c]" name="AC" is-config="true" duration-ms="76" started-at="2022-12-23T05:31:32Z" finished-at="2022-12-23T05:31:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AC -->
-      </class> <!-- com.crm.product.CreateAndDeleteProductTest -->
-      <class name="com.crm.product.CreateProductTest">
-        <test-method status="PASS" signature="BC()[pri:0, instance:com.crm.product.CreateProductTest@75329a49]" name="BC" is-config="true" duration-ms="1219" started-at="2022-12-23T05:31:32Z" finished-at="2022-12-23T05:31:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BC -->
-        <test-method status="PASS" signature="BM()[pri:0, instance:com.crm.product.CreateProductTest@75329a49]" name="BM" is-config="true" duration-ms="3432" started-at="2022-12-23T05:31:33Z" finished-at="2022-12-23T05:31:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BM -->
-        <test-method status="PASS" signature="createProductTest()[pri:0, instance:com.crm.product.CreateProductTest@75329a49]" name="createProductTest" duration-ms="7338" started-at="2022-12-23T05:31:37Z" finished-at="2022-12-23T05:31:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method status="PASS" signature="AM()[pri:0, instance:com.crm.product.CreateProductTest@75329a49]" name="AM" is-config="true" duration-ms="1428" started-at="2022-12-23T05:31:44Z" finished-at="2022-12-23T05:31:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AM -->
-        <test-method status="PASS" signature="AC()[pri:0, instance:com.crm.product.CreateProductTest@75329a49]" name="AC" is-config="true" duration-ms="16260" started-at="2022-12-23T05:31:45Z" finished-at="2022-12-23T05:32:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AC -->
-      </class> <!-- com.crm.product.CreateProductTest -->
+        </test-method> <!-- gridTest1 -->
+      </class> <!-- com.crm.product.GridProgram -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

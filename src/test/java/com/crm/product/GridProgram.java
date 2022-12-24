@@ -8,6 +8,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.crm.Generic_utilities.BaseClass;
@@ -15,20 +16,53 @@ import com.crm.Generic_utilities.BaseClass;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class GridProgram{
+	static
+	{
+		System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver", "./geckodriver.exe");
+	}
 @Test
-public void gridTest() throws MalformedURLException
-{String browser = System.getProperty("browser");
+public void gridTest1() throws MalformedURLException
+{
+	System.out.println("test1 started");
+
 	URL url=new URL("http://192.168.5.1:4444/wd/hub");
 	
 	DesiredCapabilities dc=new DesiredCapabilities();
-	dc.setBrowserName(browser);
+	//System.getProperty("browser1")
+	dc.setBrowserName("chrome");
 	dc.setPlatform(Platform.WINDOWS);
 	WebDriverManager.chromedriver().setup();
 	WebDriver driver=new RemoteWebDriver(url,dc);
 	driver.get("https://www.facebook.com/");
+	
 	driver.findElement(By.id("email")).sendKeys("admin");
 	driver.findElement(By.id("pass")).sendKeys("admin");
 	driver.findElement(By.name("login")).click();
+	System.out.println("test1 ended");
 	driver.close();
+	
+}
+@Test
+public void gridTest2() throws MalformedURLException
+{
+	System.out.println("test2 started");
+
+	URL url=new URL("http://192.168.5.1:4444/wd/hub");
+	
+	DesiredCapabilities dc=new DesiredCapabilities();
+	//System.getProperty("browser1")
+	dc.setBrowserName("firefox");
+	dc.setPlatform(Platform.WINDOWS);
+	WebDriverManager.firefoxdriver().setup();
+	WebDriver driver=new RemoteWebDriver(url,dc);
+	driver.get("https://www.facebook.com/");
+	
+	driver.findElement(By.id("email")).sendKeys("admin");
+	driver.findElement(By.id("pass")).sendKeys("admin");
+	driver.findElement(By.name("login")).click();
+	System.out.println("test2 ended");
+	driver.close();
+	
 }
 }
