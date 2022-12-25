@@ -43,7 +43,7 @@ public void gridTest1() throws MalformedURLException
 	driver.findElement(By.id("email")).sendKeys("admin");
 	driver.findElement(By.id("pass")).sendKeys("admin");
 	driver.findElement(By.name("login")).click();
-	System.out.println("test1 ended maven");
+	System.out.println("test1 ended maven in maven");
 	driver.close();
 	
 }
