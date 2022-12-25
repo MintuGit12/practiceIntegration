@@ -26,7 +26,7 @@ public class GridProgram{
 @Test
 public void gridTest1() throws MalformedURLException
 {
-	System.out.println("test1 started in maven ");
+	System.out.println("test1 started in maven okk");
 
 	URL url=new URL("http://192.168.5.1:4444/wd/hub");
 	

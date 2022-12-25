@@ -29,7 +29,7 @@ public void startReport()
 @Test
 public void demoReportPass()
 {
-	test=report.startTest("demoReportPass");
+	test=report.startTest("demoReportPass okk");
 	Assert.assertTrue(true);
 	test.log(LogStatus.PASS, "Assert pass as condition is true");
 }
