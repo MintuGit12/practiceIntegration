@@ -12,10 +12,12 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.crm.Generic_utilities.BaseClass;
+import com.crm.Generic_utilities.ListenerImplementationGrid;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+@Listeners(com.crm.Generic_utilities.ListenerImplementationGrid.class)
 public class GridProgram{
+	WebDriver sdriver;
 	static
 	{
 		System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
@@ -24,7 +26,7 @@ public class GridProgram{
 @Test
 public void gridTest1() throws MalformedURLException
 {
-	System.out.println("test1 started");
+	System.out.println("test1 started in maven ");
 
 	URL url=new URL("http://192.168.5.1:4444/wd/hub");
 	
@@ -34,12 +36,14 @@ public void gridTest1() throws MalformedURLException
 	dc.setPlatform(Platform.WINDOWS);
 	WebDriverManager.chromedriver().setup();
 	WebDriver driver=new RemoteWebDriver(url,dc);
-	driver.get("https://www.facebook.com/");
+	this.sdriver=driver;
+	ListenerImplementationGrid li=new ListenerImplementationGrid(driver);
 	
+	driver.get("https://www.facebook.com/");
 	driver.findElement(By.id("email")).sendKeys("admin");
 	driver.findElement(By.id("pass")).sendKeys("admin");
 	driver.findElement(By.name("login")).click();
-	System.out.println("test1 ended");
+	System.out.println("test1 ended maven");
 	driver.close();
 	
 }
@@ -56,8 +60,9 @@ public void gridTest2() throws MalformedURLException
 	dc.setPlatform(Platform.WINDOWS);
 	WebDriverManager.firefoxdriver().setup();
 	WebDriver driver=new RemoteWebDriver(url,dc);
-	driver.get("https://www.facebook.com/");
+	this.sdriver=driver;
 	
+	driver.get("https://www.facebook.com/");
 	driver.findElement(By.id("email")).sendKeys("admin");
 	driver.findElement(By.id("pass")).sendKeys("admin");
 	driver.findElement(By.name("login")).click();
