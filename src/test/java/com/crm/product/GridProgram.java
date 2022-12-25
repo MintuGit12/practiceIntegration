@@ -37,7 +37,7 @@ public void gridTest1() throws MalformedURLException
 	WebDriverManager.chromedriver().setup();
 	WebDriver driver=new RemoteWebDriver(url,dc);
 	this.sdriver=driver;
-	ListenerImplementationGrid li=new ListenerImplementationGrid(driver);
+	ListenerImplementationGrid.listenerImplementationGrid(driver);
 	
 	driver.get("https://www.facebook.com/");
 	driver.findElement(By.id("email")).sendKeys("admin");
@@ -62,6 +62,7 @@ public void gridTest2() throws MalformedURLException
 	WebDriver driver=new RemoteWebDriver(url,dc);
 	this.sdriver=driver;
 	
+	ListenerImplementationGrid.listenerImplementationGrid(driver);
 	driver.get("https://www.facebook.com/");
 	driver.findElement(By.id("email")).sendKeys("admin");
 	driver.findElement(By.id("pass")).sendKeys("admin");

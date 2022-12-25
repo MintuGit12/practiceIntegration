@@ -22,9 +22,9 @@
 	public class ListenerImplementationGrid implements ITestListener {
 	public ExtentReports report;
 	public ExtentTest test;
-	WebDriver sDriver;
+	static WebDriver sDriver;
 
-	public ListenerImplementationGrid(WebDriver driver)
+	public static void listenerImplementationGrid(WebDriver driver)
 	{
 		sDriver=driver;
 	}

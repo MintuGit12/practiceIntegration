@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="20142" started-at="2022-12-25T07:24:05Z" finished-at="2022-12-25T07:24:25Z">
+  <suite name="Suite" duration-ms="21141" started-at="2022-12-25T08:29:05Z" finished-at="2022-12-25T08:29:26Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="20142" started-at="2022-12-25T07:24:05Z" finished-at="2022-12-25T07:24:25Z">
+    <test name="Test" duration-ms="21141" started-at="2022-12-25T08:29:05Z" finished-at="2022-12-25T08:29:26Z">
       <class name="com.crm.product.GridProgram">
-        <test-method status="PASS" signature="gridTest2()[pri:0, instance:com.crm.product.GridProgram@45b9a632]" name="gridTest2" duration-ms="11006" started-at="2022-12-25T07:24:05Z" finished-at="2022-12-25T07:24:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gridTest2 -->
-        <test-method status="PASS" signature="gridTest1()[pri:0, instance:com.crm.product.GridProgram@45b9a632]" name="gridTest1" duration-ms="20124" started-at="2022-12-25T07:24:05Z" finished-at="2022-12-25T07:24:25Z">
+        <test-method status="PASS" signature="gridTest1()[pri:0, instance:com.crm.product.GridProgram@63a65a25]" name="gridTest1" duration-ms="21061" started-at="2022-12-25T08:29:05Z" finished-at="2022-12-25T08:29:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gridTest1 -->
+        <test-method status="PASS" signature="gridTest2()[pri:0, instance:com.crm.product.GridProgram@63a65a25]" name="gridTest2" duration-ms="13628" started-at="2022-12-25T08:29:05Z" finished-at="2022-12-25T08:29:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gridTest2 -->
       </class> <!-- com.crm.product.GridProgram -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
