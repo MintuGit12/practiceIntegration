@@ -17,7 +17,7 @@ import com.crm.Generic_utilities.ListenerImplementationGrid;
 import io.github.bonigarcia.wdm.WebDriverManager;
 @Listeners(com.crm.Generic_utilities.ListenerImplementationGrid.class)
 public class GridProgram{
-	WebDriver sdriver;
+	public WebDriver sdriver;
 	static
 	{
 		System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");

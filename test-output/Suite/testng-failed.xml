@@ -6,6 +6,7 @@
       <class name="com.crm.product.GridProgram">
         <methods>
           <include name="gridTest1"/>
+          <include name="gridTest2"/>
         </methods>
       </class> <!-- com.crm.product.GridProgram -->
     </classes>

@@ -34,6 +34,7 @@ public void demoReportPass()
 	test.log(LogStatus.PASS, "Assert pass as condition is true");
 }
 @Test
+
 public void demoReportFail()
 {
 	test=report.startTest("demoReportFail");

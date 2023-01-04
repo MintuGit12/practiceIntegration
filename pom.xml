@@ -5,6 +5,20 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <dependencies>
+  
+  <!-- https://mvnrepository.com/artifact/com.github.stephenc.monte/monte-screen-recorder -->
+<dependency>
+    <groupId>com.github.stephenc.monte</groupId>
+    <artifactId>monte-screen-recorder</artifactId>
+    <version>0.7.7.0</version>
+</dependency>
+  
+  <dependency>
+    <groupId>org.codehaus.jackson</groupId>
+    <artifactId>jackson-mapper-lgpl</artifactId>
+    <version>1.9.13</version>
+</dependency>
+  
   <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
 <dependency>
     <groupId>org.apache.maven.plugins</groupId>
