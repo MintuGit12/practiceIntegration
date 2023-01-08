@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.DataProviderTYTest">
+      <class name="com.crm.product.GridProgramBrowserStack">
         <methods>
-          <include name="data_provider"/>
+          <include name="gridTest1"/>
+          <include name="gridTest2"/>
         </methods>
-      </class> <!-- practice.DataProviderTYTest -->
+      </class> <!-- com.crm.product.GridProgramBrowserStack -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

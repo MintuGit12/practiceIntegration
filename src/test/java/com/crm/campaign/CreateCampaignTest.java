@@ -45,12 +45,12 @@ public void createCampaignTest() throws EncryptedDocumentException, IOException
 	wlib.toMaximizeBrowser(driver);
 	wlib.waitForPageToLoad(driver);
 
-
+//Assert.fail();
 HomePage home=new HomePage(driver);
 home.clickToCampaign(driver);
 CampaignListPage clist=new CampaignListPage(driver);
 clist.getCreateCampaign().click();
-//Assert.fail();
+Assert.fail();
 
 String value = elib.getExcelData("campaign", 0, 0);
 CreatingNewCampaign createCamp=new CreatingNewCampaign(driver);

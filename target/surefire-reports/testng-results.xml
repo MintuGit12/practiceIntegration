@@ -1,148 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="16" total="21" passed="5" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-19T10:49:48Z" name="Command line suite" finished-at="2022-12-19T10:51:48Z" duration-ms="119076">
+  <suite name="Suite" duration-ms="11824" started-at="2023-01-04T07:56:52Z" finished-at="2023-01-04T07:57:03Z">
     <groups>
-      <group name="regressionTest">
-        <method signature="CreateCampaignWithProductTest.createCampaignWithProductTest()[pri:0, instance:com.crm.campaign.CreateCampaignWithProductTest@123ef382]" name="createCampaignWithProductTest" class="com.crm.campaign.CreateCampaignWithProductTest"/>
-        <method signature="CreateOrganizationTest.createOrganizationTest()[pri:0, instance:com.crm.organization.CreateOrganizationTest@dbf57b3]" name="createOrganizationTest" class="com.crm.organization.CreateOrganizationTest"/>
-        <method signature="CreateProductTest.createProductTest()[pri:0, instance:com.crm.product.CreateProductTest@61862a7f]" name="createProductTest" class="com.crm.product.CreateProductTest"/>
-      </group> <!-- regressionTest -->
-      <group name="smokeTest">
-        <method signature="CreateAndDeleteProductTest.createAndDeleteProductTest()[pri:0, instance:com.crm.product.CreateAndDeleteProductTest@384ad17b]" name="createAndDeleteProductTest" class="com.crm.product.CreateAndDeleteProductTest"/>
-        <method signature="CreateCampaignTest.createCampaignTest()[pri:0, instance:com.crm.campaign.CreateCampaignTest@f5ac9e4]" name="createCampaignTest" class="com.crm.campaign.CreateCampaignTest"/>
-        <method signature="CreateCampaignWithProductTest.createCampaignWithProductTest()[pri:0, instance:com.crm.campaign.CreateCampaignWithProductTest@123ef382]" name="createCampaignWithProductTest" class="com.crm.campaign.CreateCampaignWithProductTest"/>
-        <method signature="CreateProductTest.createProductTest()[pri:0, instance:com.crm.product.CreateProductTest@61862a7f]" name="createProductTest" class="com.crm.product.CreateProductTest"/>
-      </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2022-12-19T10:49:48Z" name="Command line test" finished-at="2022-12-19T10:51:48Z" duration-ms="119076">
-      <class name="com.crm.campaign.CreateCampaignTest">
-        <test-method is-config="true" signature="BS()[pri:0, instance:com.crm.campaign.CreateCampaignTest@f5ac9e4]" started-at="2022-12-19T10:49:48Z" name="BS" finished-at="2022-12-19T10:49:48Z" duration-ms="9" status="PASS">
+    <test name="Test" duration-ms="11824" started-at="2023-01-04T07:56:52Z" finished-at="2023-01-04T07:57:03Z">
+      <class name="com.crm.product.GridProgram">
+        <test-method status="PASS" signature="gridTest1()[pri:0, instance:com.crm.product.GridProgram@2f112965]" name="gridTest1" duration-ms="4111" started-at="2023-01-04T07:56:52Z" finished-at="2023-01-04T07:56:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BS -->
-        <test-method is-config="true" signature="BT()[pri:0, instance:com.crm.campaign.CreateCampaignTest@f5ac9e4]" started-at="2022-12-19T10:49:48Z" name="BT" finished-at="2022-12-19T10:49:48Z" duration-ms="0" status="PASS">
+        </test-method> <!-- gridTest1 -->
+        <test-method status="PASS" signature="gridTest2()[pri:0, instance:com.crm.product.GridProgram@2f112965]" name="gridTest2" duration-ms="11720" started-at="2023-01-04T07:56:52Z" finished-at="2023-01-04T07:57:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BT -->
-        <test-method is-config="true" signature="BC()[pri:0, instance:com.crm.campaign.CreateCampaignTest@f5ac9e4]" started-at="2022-12-19T10:49:48Z" name="BC" finished-at="2022-12-19T10:49:50Z" duration-ms="1402" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BC -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:com.crm.campaign.CreateCampaignTest@f5ac9e4]" started-at="2022-12-19T10:49:50Z" name="BM" finished-at="2022-12-19T10:49:52Z" duration-ms="2412" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BM -->
-        <test-method signature="createCampaignTest()[pri:0, instance:com.crm.campaign.CreateCampaignTest@f5ac9e4]" started-at="2022-12-19T10:49:52Z" name="createCampaignTest" finished-at="2022-12-19T10:49:58Z" duration-ms="5568" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCampaignTest -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:com.crm.campaign.CreateCampaignTest@f5ac9e4]" started-at="2022-12-19T10:49:58Z" name="AM" finished-at="2022-12-19T10:49:59Z" duration-ms="950" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AM -->
-        <test-method is-config="true" signature="AC()[pri:0, instance:com.crm.campaign.CreateCampaignTest@f5ac9e4]" started-at="2022-12-19T10:49:59Z" name="AC" finished-at="2022-12-19T10:49:59Z" duration-ms="95" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AC -->
-        <test-method is-config="true" signature="AT()[pri:0, instance:com.crm.campaign.CreateCampaignTest@f5ac9e4]" started-at="2022-12-19T10:51:48Z" name="AT" finished-at="2022-12-19T10:51:48Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AT -->
-        <test-method is-config="true" signature="AS()[pri:0, instance:com.crm.campaign.CreateCampaignTest@f5ac9e4]" started-at="2022-12-19T10:51:48Z" name="AS" finished-at="2022-12-19T10:51:48Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AS -->
-      </class> <!-- com.crm.campaign.CreateCampaignTest -->
-      <class name="com.crm.organization.CreateOrganizationTest">
-        <test-method is-config="true" signature="BC()[pri:0, instance:com.crm.organization.CreateOrganizationTest@dbf57b3]" started-at="2022-12-19T10:50:29Z" name="BC" finished-at="2022-12-19T10:50:30Z" duration-ms="728" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BC -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:com.crm.organization.CreateOrganizationTest@dbf57b3]" started-at="2022-12-19T10:50:30Z" name="BM" finished-at="2022-12-19T10:50:32Z" duration-ms="2345" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BM -->
-        <test-method signature="createOrganizationTest()[pri:0, instance:com.crm.organization.CreateOrganizationTest@dbf57b3]" started-at="2022-12-19T10:50:32Z" name="createOrganizationTest" finished-at="2022-12-19T10:50:38Z" duration-ms="6063" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrganizationTest -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:com.crm.organization.CreateOrganizationTest@dbf57b3]" started-at="2022-12-19T10:50:38Z" name="AM" finished-at="2022-12-19T10:50:39Z" duration-ms="899" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AM -->
-        <test-method is-config="true" signature="AC()[pri:0, instance:com.crm.organization.CreateOrganizationTest@dbf57b3]" started-at="2022-12-19T10:50:39Z" name="AC" finished-at="2022-12-19T10:50:55Z" duration-ms="16257" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AC -->
-      </class> <!-- com.crm.organization.CreateOrganizationTest -->
-      <class name="com.crm.campaign.CreateCampaignWithProductTest">
-        <test-method is-config="true" signature="BC()[pri:0, instance:com.crm.campaign.CreateCampaignWithProductTest@123ef382]" started-at="2022-12-19T10:49:59Z" name="BC" finished-at="2022-12-19T10:50:00Z" duration-ms="657" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BC -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:com.crm.campaign.CreateCampaignWithProductTest@123ef382]" started-at="2022-12-19T10:50:00Z" name="BM" finished-at="2022-12-19T10:50:02Z" duration-ms="2308" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BM -->
-        <test-method signature="createCampaignWithProductTest()[pri:0, instance:com.crm.campaign.CreateCampaignWithProductTest@123ef382]" started-at="2022-12-19T10:50:02Z" name="createCampaignWithProductTest" finished-at="2022-12-19T10:50:12Z" duration-ms="10231" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCampaignWithProductTest -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:com.crm.campaign.CreateCampaignWithProductTest@123ef382]" started-at="2022-12-19T10:50:12Z" name="AM" finished-at="2022-12-19T10:50:13Z" duration-ms="848" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AM -->
-        <test-method is-config="true" signature="AC()[pri:0, instance:com.crm.campaign.CreateCampaignWithProductTest@123ef382]" started-at="2022-12-19T10:50:13Z" name="AC" finished-at="2022-12-19T10:50:29Z" duration-ms="16222" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AC -->
-      </class> <!-- com.crm.campaign.CreateCampaignWithProductTest -->
-      <class name="com.crm.product.CreateAndDeleteProductTest">
-        <test-method is-config="true" signature="BC()[pri:0, instance:com.crm.product.CreateAndDeleteProductTest@384ad17b]" started-at="2022-12-19T10:50:55Z" name="BC" finished-at="2022-12-19T10:50:56Z" duration-ms="740" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BC -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:com.crm.product.CreateAndDeleteProductTest@384ad17b]" started-at="2022-12-19T10:50:56Z" name="BM" finished-at="2022-12-19T10:50:58Z" duration-ms="2199" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BM -->
-        <test-method signature="createAndDeleteProductTest()[pri:0, instance:com.crm.product.CreateAndDeleteProductTest@384ad17b]" started-at="2022-12-19T10:50:58Z" name="createAndDeleteProductTest" finished-at="2022-12-19T10:51:03Z" duration-ms="5055" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createAndDeleteProductTest -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:com.crm.product.CreateAndDeleteProductTest@384ad17b]" started-at="2022-12-19T10:51:03Z" name="AM" finished-at="2022-12-19T10:51:06Z" duration-ms="2556" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AM -->
-        <test-method is-config="true" signature="AC()[pri:0, instance:com.crm.product.CreateAndDeleteProductTest@384ad17b]" started-at="2022-12-19T10:51:06Z" name="AC" finished-at="2022-12-19T10:51:22Z" duration-ms="16276" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AC -->
-      </class> <!-- com.crm.product.CreateAndDeleteProductTest -->
-      <class name="com.crm.product.CreateProductTest">
-        <test-method is-config="true" signature="BC()[pri:0, instance:com.crm.product.CreateProductTest@61862a7f]" started-at="2022-12-19T10:51:22Z" name="BC" finished-at="2022-12-19T10:51:23Z" duration-ms="720" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BC -->
-        <test-method is-config="true" signature="BM()[pri:0, instance:com.crm.product.CreateProductTest@61862a7f]" started-at="2022-12-19T10:51:23Z" name="BM" finished-at="2022-12-19T10:51:25Z" duration-ms="2328" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BM -->
-        <test-method signature="createProductTest()[pri:0, instance:com.crm.product.CreateProductTest@61862a7f]" started-at="2022-12-19T10:51:25Z" name="createProductTest" finished-at="2022-12-19T10:51:30Z" duration-ms="4990" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProductTest -->
-        <test-method is-config="true" signature="AM()[pri:0, instance:com.crm.product.CreateProductTest@61862a7f]" started-at="2022-12-19T10:51:30Z" name="AM" finished-at="2022-12-19T10:51:31Z" duration-ms="953" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AM -->
-        <test-method is-config="true" signature="AC()[pri:0, instance:com.crm.product.CreateProductTest@61862a7f]" started-at="2022-12-19T10:51:31Z" name="AC" finished-at="2022-12-19T10:51:48Z" duration-ms="16254" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AC -->
-      </class> <!-- com.crm.product.CreateProductTest -->
-    </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+        </test-method> <!-- gridTest2 -->
+      </class> <!-- com.crm.product.GridProgram -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

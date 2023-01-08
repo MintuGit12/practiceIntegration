@@ -1,5 +1,6 @@
 package com.crm.Generic_utilities;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
@@ -20,12 +21,14 @@ import org.testng.annotations.Parameters;
 import com.beust.jcommander.Parameter;
 import com.crm.Object_Repository.HomePage;
 import com.crm.Object_Repository.LoginPage;
+import com.relevantcodes.extentreports.ExtentReports;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 public WebDriver driver;
 public static WebDriver sDriver;
+public ExtentReports report;
 static {
 	System.setProperty("webdriver.chrome.driver","./chromedriver.exe");
 	System.setProperty("webdriver.gecko.driver","./geckodriver.exe");
@@ -38,8 +41,8 @@ public void BS()
 }
 	@BeforeTest
 public void BT()
-{
-	//System.out.println("run in parellel mode");
+{	
+		//System.out.println("run in parellel mode");
 }
 	@Parameters("browser")
 	@BeforeClass(groups = {"smokeTest","regressionTest"})
@@ -47,8 +50,8 @@ public void BT()
 public void BC() throws IOException
 { 
 		 File_Utility flib=new File_Utility();
-		//String browser = System.getProperty("browser");
-			String browser=flib.getPropertyKeyValue("browser");
+		String browser = System.getProperty("browser");
+			//String browser=flib.getPropertyKeyValue("browser");
 if(browser.equalsIgnoreCase("chrome"))
 {
 	WebDriverManager.chromedriver().setup();
