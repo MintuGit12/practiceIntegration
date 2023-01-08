@@ -29,7 +29,7 @@ public void gridTest1() throws MalformedURLException
 	System.out.println("test1 started in maven okk");
 
 	URL url=new URL("http://192.168.5.1:4444/wd/hub");
-	
+	System.out.println("this is grod program");
 	DesiredCapabilities dc=new DesiredCapabilities();
 	//System.getProperty("browser1")
 	dc.setBrowserName("chrome");
